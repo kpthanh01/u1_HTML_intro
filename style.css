@@ -1,0 +1,85 @@
+body {
+    background-image: url("./assets/pokedex.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    padding-top: 50%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 40px;
+    font-size: 30px;
+}
+
+a:link, a:visited, a:link:active, a:visited:active {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover, a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(64, 67, 238, 0.993);
+}
+
+.card {
+    text-align: center;
+    margin: 20px 0;
+    border: 5px solid;
+    border-radius: 5px;
+}
+
+.pkm-stat-card {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pkm-stat-card p {
+    display: inline;
+    margin: 20px;
+    width: 20%;
+
+}
+
+.pkm-info {
+    padding: 0 50px;
+    font-size: 25px;
+}
+
+.pkm-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5em 0;
+}
+
+.pkm-gallery img {
+    height: 13em;
+    width: 17em;
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding-top: 45%;
+        padding-bottom: 45%;
+    }
+}

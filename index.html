@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <nav>
+            <ul>
+                <li><a href="https://bulbapedia.bulbagarden.net/wiki/Bidoof_(Pokémon)">Pokemon</a></li>
+                <li onclick="mapAlert()">Map</li>
+                <button class="btn" onclick="document.getElementById('gallery').scrollIntoView();">Press</button>
+                <li onclick="document.getElementById('gallery').scrollIntoView();">Cards</li>
+                <li>Threads</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card">
+        <img src="./assets/bidoof.png" alt="bidoof">
+    </div>
+    <div id="stats" class="pkm-stat-card"></div>
+    <article class="pkm-info">
+        <p>
+            Bidoof is a brown, rodent-like Pokémon with four short legs. It has a short, dark brown snout and a small,
+            red nose. Cream-colored markings cover its underside and surround its face.
+            Round tufts of fur form its tail, with five on the male and three on the female. Similar tufts line the
+            bottom of its face and two singular ones form its ears.
+            Bidoof's black paws have three toes with some webbing between them. Protruding from Bidoof's upper jaw are
+            large incisors, which it uses for gnawing on wood and rocks.
+            These teeth grow constantly, so this Pokémon needs to gnaw on hard substances to keep them ground down. The
+            growth rate of Bidoof's teeth is similar to Rattata.
+        </p>
+        <p>
+            This Pokémon can be found nesting in groups near bodies of water, usually building a nest of dams to live
+            in. It is also known to wander into villages, gnawing on people's houses.
+            Despite its stout body and naive appearance, this Pokémon can be agile and is not easily perturbed.
+        </p>
+    </article>
+    <div id="gallery" class="pkm-gallery">
+        <img src="./assets/bidoof1.jpg" alt="bidoof1">
+        <img src="./assets/bidoof3.jpg" alt="bidoof3">
+        <img src="./assets/bidoof2.jpg" alt="bidoof2">
+    </div>
+    <script src="pokemon.js"></script>
+</body>
+
+</html>
